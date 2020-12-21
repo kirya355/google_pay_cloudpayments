@@ -1,3 +1,4 @@
+This is a modified google_pay plugin for flutter to interact with cloudpayments, from https://github.com/baranyildirim/google_pay/
 # google_pay
 
 Google Pay for Flutter. Currently works with Stripe.
