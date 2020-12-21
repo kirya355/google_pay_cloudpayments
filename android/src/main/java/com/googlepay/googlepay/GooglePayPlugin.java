@@ -180,9 +180,8 @@ public class GooglePayPlugin implements MethodCallHandler {
     private PaymentMethodTokenizationParameters createTokenizationParameters(String stripeKey) {
         return PaymentMethodTokenizationParameters.newBuilder()
                 .setPaymentMethodTokenizationType(WalletConstants.PAYMENT_METHOD_TOKENIZATION_TYPE_PAYMENT_GATEWAY)
-                .addParameter("gateway", "stripe")
+                .addParameter("gateway", "cloudpayments")
                 .addParameter("stripe:publishableKey", stripeKey)
-                .addParameter("stripe:version", "2018-11-08")
                 .build();
     }
 }
